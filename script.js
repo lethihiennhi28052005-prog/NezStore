@@ -245,7 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                     </div>
                     <div class="product-info">
-                        <h3 class="product-name"><a href="product-detail.html?id=${p.id}">${p.name}</a></h3>
+                        <h3 class="product-title"><a href="product-detail.html?id=${p.id}">${p.name}</a></h3>
                         <div class="product-price"><span class="price-current">${p.price}</span>${oldP}</div>
                     </div>
                 </div>`;
@@ -278,9 +278,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         if (catNext) catNext.addEventListener('click', () => {
             const cards = catTrack.querySelectorAll('.product-card');
-            const maxOffset = -((cards.length - visibleCount) * itemWidth);
-            catOffset = Math.max(catOffset - itemWidth, maxOffset);
-            catTrack.style.transform = `translateX(${catOffset}px)`;
+            const trackWidth = catTrack.parentElement.clientWidth;
+            const currentVisibleCount = Math.floor((trackWidth + 20) / itemWidth);
+            const maxOffset = -((cards.length - currentVisibleCount) * itemWidth);
+            if (maxOffset < 0) {
+                catOffset = Math.max(catOffset - itemWidth, maxOffset);
+                catTrack.style.transform = `translateX(${catOffset}px)`;
+            }
         });
 
         // Load default tab
