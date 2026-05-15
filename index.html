@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Bán Quần Áo | NezStore</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+            Miễn phí vận chuyển cho đơn hàng từ 500K - Đăng ký thành viên nhận ngay voucher 100K!
+        </marquee>
+    </div>
+
+    <!-- Main Header -->
+    <header id="main-header" class="header">
+        <div class="container header-container">
+            <!-- Left: Logo -->
+            <div class="logo">
+                <a href="#"><img src="img/banner/NezStore.png" alt="logo"> </a>
+            </div>
+
+            <!-- Center: Navigation -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+
+                    <!-- Mega Menu for Products -->
+                    <li class="nav-item has-mega-menu">
+                        <a href="products.html" class="nav-link">Sản phẩm <i class="ph ph-caret-down"></i></a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content container">
+                                <div class="mega-column">
+                                    <h3 class="mega-title"><a href="products.html?gender=nam">Đồ Nam</a></h3>
+                                    <ul class="mega-list">
+                                        <li><a href="products.html?gender=nam&sub=Áo thun">Áo thun</a></li>
+                                        <li><a href="products.html?gender=nam&sub=Quần tây">Quần tây</a></li>
+                                        <li><a href="products.html?gender=nam&sub=Quần jean">Quần jean</a></li>
+                                        <li><a href="products.html?gender=nam&sub=Áo khoác">Áo khoác</a></li>
+                                        <li><a href="products.html?gender=nam&sub=Mũ">Mũ</a></li>
+                                        <li><a href="products.html?gender=nam&sub=Giày">Giày</a></li>      
+                                        <li><a href="products.html?gender=nam&sub=Quần áo thu đông">Quần áo thu đông</a></li>                                 
+                                    </ul>
+                                </div>
+                                <div class="mega-column">
+                                    <h3 class="mega-title"><a href="products.html?gender=nu">Đồ Nữ</a></h3>
+                                    <ul class="mega-list">
+                                        <li><a href="products.html?gender=nu&sub=Áo thun">Áo thun</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Quần">Quần</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Váy">Váy</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Váy liền">Váy liền</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Áo khoác">Áo khoác</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Giày">Giày</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Phụ kiện">Phụ kiện</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Túi Xách">Túi Xách</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Quần áo thu đông">Quần áo thu đông</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-column banner-column">
+                                    <div class="mega-banner">
+                                        <img src="https://images.unsplash.com/photo-1529720317453-c8da503f2051?q=80&w=1470&auto=format&fit=crop"
+                                            alt="Mega Menu Banner">
+                                        <div class="mega-banner-content">
+                                            <h4>Bộ Sưu Tập Mới</h4>
+                                            <a href="#" class="btn-link">Khám phá ngay</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Liên hệ</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link sale-link">Sale</a></li>
+                    <li class="nav-item"><a href="LabThucHanh.html" class="nav-link">Lab Thực Hành</a></li>
+                </ul>
+            </nav>
+
+            <!-- Right: Icons & Actions -->
+            <div class="header-actions">
+                <button class="action-btn search-btn" title="Tìm kiếm">
+                    <i class="ph ph-magnifying-glass"></i>
+                </button>
+                <div class="user-dropdown-wrap">
+                    <button class="action-btn user-btn" title="Tài khoản" onclick="window.location.href='profile.html'">
+                        <i class="ph ph-user"></i>
+                    </button>
+                    <div class="user-dropdown">
+                        <a href="login.html">Đăng nhập</a>
+                        <a href="register.html">Đăng ký</a>
+                        <a href="profile.html">Hồ sơ</a>
+                    </div>
+                </div>
+                <button class="action-btn cart-btn" title="Giỏ hàng" onclick="window.location.href='cart.html'">
+                    <i class="ph ph-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- 1. HERO BANNER SLIDER -->
+        <section class="hero" style="position:relative; overflow:hidden;">
+            <div id="hero-slider" style="display:flex; transition:transform 0.6s ease; height:100%;">
+                <div class="slide" style="min-width:100%; background-image:url('img/banner/hero-slide-1.jpg');">
+                    <div class="slide-content">
+                        <h2 class="slide-subtitle">NEW COLLECTION 2026</h2>
+                        <h1 class="slide-title">STREETWEAR<br>REDEFINED</h1>
+                        <p class="slide-desc">Thể hiện cá tính với bộ sưu tập Thu Đông mới nhất.</p>
+                        <a href="products.html" class="btn btn-primary">KHÁM PHÁ NGAY</a>
+                    </div>
+                </div>
+                <div class="slide" style="min-width:100%; background-image:url('img/banner/hero-slide-2.jpg');">
+                    <div class="slide-content">
+                        <h2 class="slide-subtitle">KHUYẾN MÃI MÙA HÈ</h2>
+                        <h1 class="slide-title">SALE UP TO<br>50%</h1>
+                        <p class="slide-desc">Đừng bỏ lỡ cơ hội sở hữu những món đồ hot nhất mùa này.</p>
+                        <a href="products.html" class="btn btn-primary">MUA NGAY</a>
+                    </div>
+                </div>
+            </div>
+            <button id="prev-slide"
+                style="position:absolute;top:50%;left:20px;transform:translateY(-50%);background:rgba(0,0,0,0.5);color:#fff;border:none;width:44px;height:44px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:20px;border-radius:50%;z-index:10;"><i
+                    class="ph ph-caret-left"></i></button>
+            <button id="next-slide"
+                style="position:absolute;top:50%;right:20px;transform:translateY(-50%);background:rgba(0,0,0,0.5);color:#fff;border:none;width:44px;height:44px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:20px;border-radius:50%;z-index:10;"><i
+                    class="ph ph-caret-right"></i></button>
+            <div id="slide-dots"
+                style="position:absolute;bottom:20px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:10;">
+                <span class="dot active" data-index="0"
+                    style="width:10px;height:10px;border-radius:50%;background:white;cursor:pointer;opacity:1;transition:opacity 0.3s;"></span>
+                <span class="dot" data-index="1"
+                    style="width:10px;height:10px;border-radius:50%;background:white;cursor:pointer;opacity:0.5;transition:opacity 0.3s;"></span>
+            </div>
+        </section>
+
+        <!-- 2. COMMITMENTS -->
+        <section style="background:#fff; padding:40px 0; border-bottom:1px solid #eee;">
+            <div class="container"
+                style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0;text-align:center;">
+                <div style="padding:20px;border-right:1px solid #eee;">
+                    <i class="ph ph-truck"
+                        style="font-size:36px;color:var(--color-primary);display:block;margin-bottom:10px;"></i>
+                    <strong style="display:block;margin-bottom:5px;font-size:14px;">GIAO HÀNG MIỄN PHÍ</strong>
+                    <span style="font-size:12px;color:#888;">Đơn từ 500.000đ</span>
+                </div>
+                <div style="padding:20px;border-right:1px solid #eee;">
+                    <i class="ph ph-arrows-counter-clockwise"
+                        style="font-size:36px;color:var(--color-primary);display:block;margin-bottom:10px;"></i>
+                    <strong style="display:block;margin-bottom:5px;font-size:14px;">ĐỔI TRẢ 30 NGÀY</strong>
+                    <span style="font-size:12px;color:#888;">Đổi trả dễ dàng</span>
+                </div>
+                <div style="padding:20px;border-right:1px solid #eee;">
+                    <i class="ph ph-shield-check"
+                        style="font-size:36px;color:var(--color-primary);display:block;margin-bottom:10px;"></i>
+                    <strong style="display:block;margin-bottom:5px;font-size:14px;">CHÍNH HÃNG 100%</strong>
+                    <span style="font-size:12px;color:#888;">Đảm bảo chất lượng</span>
+                </div>
+                <div style="padding:20px;">
+                    <i class="ph ph-headset"
+                        style="font-size:36px;color:var(--color-primary);display:block;margin-bottom:10px;"></i>
+                    <strong style="display:block;margin-bottom:5px;font-size:14px;">HỖ TRỢ 24/7</strong>
+                    <span style="font-size:12px;color:#888;">Luôn đồng hành</span>
+                </div>
+            </div>
+        </section>
+        <!-- 3. BANNER NAM / NỮ -->
+        <section class="container" style="margin-bottom:60px;">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+                <a href="products.html?gender=nam"
+                    style="display:block;position:relative;height:280px;border-radius:6px;overflow:hidden;">
+                    <img src="img/banner/category-nam.jpg" alt="Thời trang nam"
+                        style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s ease;">
+                    <div
+                        style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.6),transparent);display:flex;align-items:flex-end;padding:25px;">
+                        <div style="color:white;">
+                            <p style="font-size:13px;letter-spacing:2px;margin-bottom:5px;">BST MỚI</p>
+                            <h2 style="font-size:26px;margin-bottom:10px;">THỜI TRANG NAM</h2>
+                            <span style="font-size:13px;border-bottom:1px solid white;padding-bottom:2px;">Khám phá ngay
+                                →</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="products.html?gender=nu"
+                    style="display:block;position:relative;height:280px;border-radius:6px;overflow:hidden;">
+                    <img src="img/banner/category-nu.jpg" alt="Thời trang nữ"
+                        style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s ease;">
+                    <div
+                        style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.6),transparent);display:flex;align-items:flex-end;padding:25px;">
+                        <div style="color:white;">
+                            <p style="font-size:13px;letter-spacing:2px;margin-bottom:5px;">BST MỚI</p>
+                            <h2 style="font-size:26px;margin-bottom:10px;">THỜI TRANG NỮ</h2>
+                            <span style="font-size:13px;border-bottom:1px solid white;padding-bottom:2px;">Khám phá ngay
+                                →</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- 4. CATEGORY TABS + PRODUCT SLIDE -->
+        <section class="container section-padding">
+            <div style="text-align:center;margin-bottom:30px;">
+                <h2 style="font-size:28px;margin-bottom:20px;">SẢN PHẨM NỔI BẬT</h2>
+                <div id="cat-tabs" style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+                    <button class="cat-tab-btn active" data-sub="Áo thun"
+                        style="padding:8px 20px;border:1px solid var(--color-primary);background:var(--color-primary);color:#fff;cursor:pointer;font-family:var(--font-body);font-size:13px;border-radius:2px;">Áo
+                        thun</button>
+                    <button class="cat-tab-btn" data-sub="Quần jean"
+                        style="padding:8px 20px;border:1px solid var(--color-border);background:#fff;color:var(--color-text);cursor:pointer;font-family:var(--font-body);font-size:13px;border-radius:2px;">Quần
+                        jean</button>
+                    <button class="cat-tab-btn" data-sub="Áo khoác"
+                        style="padding:8px 20px;border:1px solid var(--color-border);background:#fff;color:var(--color-text);cursor:pointer;font-family:var(--font-body);font-size:13px;border-radius:2px;">Áo
+                        khoác</button>
+                    <button class="cat-tab-btn" data-sub="Váy"
+                        style="padding:8px 20px;border:1px solid var(--color-border);background:#fff;color:var(--color-text);cursor:pointer;font-family:var(--font-body);font-size:13px;border-radius:2px;">Váy</button>
+                    <button class="cat-tab-btn" data-sub="Giày"
+                        style="padding:8px 20px;border:1px solid var(--color-border);background:#fff;color:var(--color-text);cursor:pointer;font-family:var(--font-body);font-size:13px;border-radius:2px;">Giày</button>
+                    <button class="cat-tab-btn" data-sub="Quần áo thu đông"
+                        style="padding:8px 20px;border:1px solid var(--color-border);background:#fff;color:var(--color-text);cursor:pointer;font-family:var(--font-body);font-size:13px;border-radius:2px;">Quần áo
+                        thu đông</button>
+                    <button class="cat-tab-btn" data-sub="Túi Xách"
+                        style="padding:8px 20px;border:1px solid var(--color-border);background:#fff;color:var(--color-text);cursor:pointer;font-family:var(--font-body);font-size:13px;border-radius:2px;">Túi Xách</button>
+                </div>
+            </div>
+            <!-- Product slide wrapper -->
+            <div style="position:relative;overflow:hidden;">
+                <div id="cat-product-track" style="display:flex;gap:20px;transition:transform 0.4s ease;">
+                    <!-- Products injected by JS -->
+                </div>
+                <button id="cat-prev"
+                    style="position:absolute;top:50%;left:-18px;transform:translateY(-50%);background:white;border:1px solid #ddd;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.1);z-index:5;"><i
+                        class="ph ph-caret-left"></i></button>
+                <button id="cat-next"
+                    style="position:absolute;top:50%;right:-18px;transform:translateY(-50%);background:white;border:1px solid #ddd;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.1);z-index:5;"><i
+                        class="ph ph-caret-right"></i></button>
+            </div>
+            <div style="text-align:center;margin-top:30px;">
+                <a id="cat-view-all" href="products.html" class="btn btn-outline">XEM TẤT CẢ</a>
+            </div>
+        </section>
+
+
+
+        <!-- 5. THƯƠNG HIỆU -->
+        <section style="background:#111;color:#fff;padding:60px 0;margin-bottom:60px;">
+            <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
+                <div>
+                    <p style="letter-spacing:3px;font-size:12px;color:#aaa;margin-bottom:15px;">VỀ CHÚNG TÔI</p>
+                    <h2 style="font-size:36px;margin-bottom:20px;line-height:1.3;">NezStore — THỂ HIỆN<br>PHONG CÁCH CỦA BẠN
+                    </h2>
+                    <p style="color:#aaa;line-height:1.9;margin-bottom:25px;">Thành lập năm 2025, NezStore là thương
+                        hiệu thời trang thuần Việt dành cho giới trẻ năng động. Chúng tôi tập trung vào chất liệu bền
+                        vững, thiết kế thực dụng và giá cả phải chăng — để mọi người đều có thể mặc đẹp mỗi ngày.</p>
+                    <div style="display:flex;gap:30px;margin-bottom:30px;">
+                        <div><strong style="font-size:28px;display:block;">50+</strong><span
+                                style="color:#aaa;font-size:13px;">Mẫu sản phẩm</span></div>
+                        <div><strong style="font-size:28px;display:block;">10K+</strong><span
+                                style="color:#aaa;font-size:13px;">Khách hàng</span></div>
+                        <div><strong style="font-size:28px;display:block;">5★</strong><span
+                                style="color:#aaa;font-size:13px;">Đánh giá</span></div>
+                    </div>
+                    <a href="products.html" class="btn btn-primary">MUA SẮM NGAY</a>
+                </div>
+                <div style="border-radius:8px;overflow:hidden;height:600px;">
+                    <img src="img/banner/anhdaidien.jpg" alt="Thương hiệu NezStore"
+                        style="width:100%;height:100%;object-fit:cover;filter:grayscale(30%);">
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. FORM LIÊN HỆ / TƯ VẤN -->
+        <section class="container section-padding" style="margin-bottom:60px;">
+            <div style="max-width:640px;margin:0 auto;text-align:center;">
+                <p style="letter-spacing:3px;font-size:12px;color:#aaa;margin-bottom:10px;">LIÊN HỆ</p>
+                <h2 style="font-size:28px;margin-bottom:10px;">ĐĂNG KÝ TƯ VẤN & NHẬN ƯU ĐÃI</h2>
+                <p style="color:var(--color-text-light);margin-bottom:30px;">Để lại thông tin, đội ngũ Stylist sẽ tư vấn
+                    phong cách phù hợp và gửi tặng ngay <strong>Voucher 10%</strong> cho đơn hàng đầu tiên!</p>
+                <form id="contact-home-form" style="display:flex;flex-direction:column;gap:15px;text-align:left;">
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:15px;">
+                        <input type="text" id="cf-name" placeholder="Họ và tên *"
+                            style="padding:14px;border:1px solid var(--color-border);font-family:var(--font-body);border-radius:4px;width:100%;box-sizing:border-box;"
+                            required>
+                        <input type="tel" id="cf-phone" placeholder="Số điện thoại *"
+                            style="padding:14px;border:1px solid var(--color-border);font-family:var(--font-body);border-radius:4px;width:100%;box-sizing:border-box;"
+                            required>
+                    </div>
+                    <input type="email" id="cf-email" placeholder="Email (tuỳ chọn)"
+                        style="padding:14px;border:1px solid var(--color-border);font-family:var(--font-body);border-radius:4px;width:100%;box-sizing:border-box;">
+                    <textarea id="cf-msg" placeholder="Bạn cần tư vấn phong cách nào?"
+                        style="padding:14px;border:1px solid var(--color-border);height:110px;font-family:var(--font-body);border-radius:4px;resize:vertical;width:100%;box-sizing:border-box;"></textarea>
+                    <button type="submit" class="btn btn-primary" style="padding:15px;font-size:15px;width:100%;">GỬI
+                        YÊU CẦU TƯ VẤN</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">NezStore</div>
+                <p>Khám phá phong cách của riêng bạn với những thiết kế độc đáo và hiện đại nhất từ chúng tôi.</p>
+                <div class="social-links">
+                    <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                    <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="#"><i class="ph ph-tiktok-logo"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Về Chúng Tôi</h3>
+                <ul>
+                    <li><a href="#">Câu chuyện thương hiệu</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Hệ thống cửa hàng</a></li>
+                    <li><a href="#">Blog thời trang</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Hỗ Trợ Khách Hàng</h3>
+                <ul>
+                    <li><a href="#">Chính sách đổi trả</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Hướng dẫn chọn size</a></li>
+                    <li><a href="#">Liên hệ: 1900 1234</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Đăng Ký Nhận Tin</h3>
+                <p>Nhận ngay mã giảm giá 10% cho đơn hàng đầu tiên của bạn.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Nhập email của bạn" required>
+                    <button type="submit"><i class="ph ph-paper-plane-right"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 NezStore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

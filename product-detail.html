@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm | NezStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="main-header" class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#"><img src="img/banner/NezStore.png" alt="logo"> </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Sản phẩm</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Liên hệ</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="user-dropdown-wrap">
+                    <button class="action-btn user-btn" title="Tài khoản" onclick="window.location.href='profile.html'">
+                        <i class="ph ph-user"></i>
+                    </button>
+                    <div class="user-dropdown">
+                        <a href="login.html">Đăng nhập</a>
+                        <a href="register.html">Đăng ký</a>
+                        <a href="profile.html">Hồ sơ</a>
+                    </div>
+                </div>
+                <button class="action-btn cart-btn" title="Giỏ hàng" onclick="window.location.href='cart.html'">
+                    <i class="ph ph-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="container section-padding" style="min-height: 60vh;">
+            <div style="display:flex; gap:50px; flex-wrap:wrap;">
+                <div style="flex: 1; min-width: 300px;">
+                    <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=800&auto=format&fit=crop" style="width:100%; border-radius:4px; object-fit:cover; box-shadow: var(--shadow-sm);" alt="Product">
+                </div>
+                <div style="flex: 1; min-width: 300px; padding-top: 20px;">
+                    <div style="margin-bottom: 15px;">
+                        <a href="index.html" style="color:var(--color-text-light); font-size:14px;">Trang chủ</a> / <a href="index.html" style="color:var(--color-text-light); font-size:14px;">Sản phẩm</a> / <span style="font-size:14px;">Áo Thun Essential Oversize</span>
+                    </div>
+                    
+                    <h1 style="font-size:32px; margin-bottom:10px; text-transform:none;">Áo Thun Essential Oversize</h1>
+                    <div style="font-size:24px; font-weight:bold; font-family:var(--font-heading); margin-bottom:20px;">350,000đ</div>
+                    
+                    <p style="color:var(--color-text-light); margin-bottom:30px; line-height:1.8;">Áo thun form rộng thoải mái, chất liệu cotton 100% thoáng mát. Phù hợp cho những ngày dạo phố năng động. Thiết kế basic dễ dàng phối với nhiều trang phục khác nhau. Mang lại phong cách Streetwear tối giản nhưng cuốn hút.</p>
+                    
+                    <div style="margin-bottom:20px;">
+                        <h4 style="margin-bottom:10px; font-family:var(--font-body); font-weight:600; text-transform:none;">Kích thước:</h4>
+                        <div style="display:flex; gap:10px;">
+                            <button style="width:40px; height:40px; border:1px solid var(--color-primary); background:var(--color-primary); color:white; cursor:pointer; font-weight:bold;">S</button>
+                            <button style="width:40px; height:40px; border:1px solid var(--color-border); background:white; cursor:pointer; font-weight:bold;">M</button>
+                            <button style="width:40px; height:40px; border:1px solid var(--color-border); background:white; cursor:pointer; font-weight:bold;">L</button>
+                            <button style="width:40px; height:40px; border:1px solid var(--color-border); background:white; cursor:pointer; font-weight:bold;">XL</button>
+                        </div>
+                    </div>
+                    
+                    <div style="display:flex; gap:15px; margin-top:40px;">
+                        <!-- Using dummy data to trigger cart -->
+                        <button class="btn btn-primary" style="flex-grow:1; font-size:16px;" onclick="addDummyProductToCart()">THÊM VÀO GIỎ HÀNG</button>
+                        <button class="btn btn-outline" style="width:50px; height:50px; display:flex; align-items:center; justify-content:center; border:1px solid var(--color-border);"><i class="ph ph-heart" style="font-size:24px;"></i></button>
+                    </div>
+
+                    <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--color-border);">
+                        <p style="margin-bottom: 10px; display:flex; align-items:center; gap:10px;"><i class="ph ph-truck"></i> Giao hàng miễn phí toàn quốc cho đơn từ 500K</p>
+                        <p style="display:flex; align-items:center; gap:10px;"><i class="ph ph-arrows-counter-clockwise"></i> Đổi trả dễ dàng trong 7 ngày</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" style="padding-top: 40px;">
+        <div class="footer-bottom">
+            <p>&copy; 2026 NezStore. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        // Dummy script for Product Detail add to cart
+        function addDummyProductToCart() {
+            let cart = JSON.parse(localStorage.getItem('NezStoreCart')) || [];
+            const dummyProduct = {
+                name: "Áo Thun Essential Oversize",
+                price: "350,000đ",
+                img1: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=500&auto=format&fit=crop",
+                quantity: 1
+            };
+            const existing = cart.find(i => i.name === dummyProduct.name);
+            if(existing) {
+                existing.quantity++;
+            } else {
+                cart.push(dummyProduct);
+            }
+            localStorage.setItem('NezStoreCart', JSON.stringify(cart));
+            alert('Đã thêm sản phẩm vào giỏ hàng!');
+            window.location.href = 'cart.html';
+        }
+    </script>
+</body>
+</html>

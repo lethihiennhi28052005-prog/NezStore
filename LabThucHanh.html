@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Thuc Hanh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="LabThucHanh.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="main-header" class="header">
+        <div class="container header-container">
+            <!-- Left: Logo -->
+            <div class="logo">
+                <a href="#"><img src="img/banner/NezStore.png" alt="logo"> </a>
+            </div>
+
+            <!-- Center: Navigation -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+
+                    <!-- Mega Menu for Products -->
+                    <li class="nav-item has-mega-menu">
+                        <a href="products.html" class="nav-link">Sản phẩm <i class="ph ph-caret-down"></i></a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content container">
+                                <div class="mega-column">
+                                    <h3 class="mega-title"><a href="products.html?gender=nam">Đồ Nam</a></h3>
+                                    <ul class="mega-list">
+                                        <li><a href="products.html?gender=nam&sub=Áo thun">Áo thun</a></li>
+                                        <li><a href="products.html?gender=nam&sub=Quần tây">Quần tây</a></li>
+                                        <li><a href="products.html?gender=nam&sub=Quần jean">Quần jean</a></li>
+                                        <li><a href="products.html?gender=nam&sub=Áo khoác">Áo khoác</a></li>
+                                        <li><a href="products.html?gender=nam&sub=Mũ">Mũ</a></li>
+                                        <li><a href="products.html?gender=nam&sub=Giày">Giày</a></li>      
+                                        <li><a href="products.html?gender=nam&sub=Quần áo thu đông">Quần áo thu đông</a></li>                                 
+                                    </ul>
+                                </div>
+                                <div class="mega-column">
+                                    <h3 class="mega-title"><a href="products.html?gender=nu">Đồ Nữ</a></h3>
+                                    <ul class="mega-list">
+                                        <li><a href="products.html?gender=nu&sub=Áo thun">Áo thun</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Quần">Quần</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Váy">Váy</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Váy liền">Váy liền</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Áo khoác">Áo khoác</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Giày">Giày</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Phụ kiện">Phụ kiện</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Mũ">Mũ</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Túi Xách">Túi Xách</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Quần áo thu đông">Quần áo thu đông</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-column banner-column">
+                                    <div class="mega-banner">
+                                        <img src="https://images.unsplash.com/photo-1529720317453-c8da503f2051?q=80&w=1470&auto=format&fit=crop"
+                                            alt="Mega Menu Banner">
+                                        <div class="mega-banner-content">
+                                            <h4>Bộ Sưu Tập Mới</h4>
+                                            <a href="#" class="btn-link">Khám phá ngay</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Liên hệ</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link sale-link">Sale</a></li>
+                    <li class="nav-item"><a href="LabThucHanh.html" class="nav-link">Lab Thực Hành</a></li>
+                </ul>
+            </nav>
+
+            <!-- Right: Icons & Actions -->
+            <div class="header-actions">
+                <button class="action-btn search-btn" title="Tìm kiếm">
+                    <i class="ph ph-magnifying-glass"></i>
+                </button>
+                <div class="user-dropdown-wrap">
+                    <button class="action-btn user-btn" title="Tài khoản" onclick="window.location.href='profile.html'">
+                        <i class="ph ph-user"></i>
+                    </button>
+                    <div class="user-dropdown">
+                        <a href="login.html">Đăng nhập</a>
+                        <a href="register.html">Đăng ký</a>
+                        <a href="profile.html">Hồ sơ</a>
+                    </div>
+                </div>
+                <button class="action-btn cart-btn" title="Giỏ hàng" onclick="window.location.href='cart.html'">
+                    <i class="ph ph-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+
+    <div class="card">
+        <h3>Lab01: HTML</h3>
+        <a href="Lab1/Lab1/Vi_du/Lab1_bai4,5.html">Lab1</a>
+        <a href=""> </a> <br>
+        <a href=""> </a> <br>
+        <button>Xem chi tiết</button>
+    </div>
+
+    <div class="card">
+        <h3>Lab02: Table & List</h3>
+        <a href="Lab2/Lab2/lab02_1.html">Lab2_1</a>
+        <a href="Lab2/Lab2/lab02_2.html">Lab2_2</a>
+        <a href="Lab2/Lab2/lab02_3.html">Lab2_3</a>
+        <button>Xem chi tiết</button>
+    </div>
+    <div class="card">
+        <h3>Lab03: Frame & Form</h3>
+        <a href="Lab3/Lab3/Vi_du_Lab01/lab03_1.html">Lab3_1</a>
+        <a href="Lab3/Lab3/Vi_du_Lab01/lab03_2.html">Lab3_2</a>
+        <a href="Lab3/Lab3/Vi_du_Lab01/lab03_3.html">Lab3_3</a>
+        <button>Xem chi tiết</button>
+    </div>
+
+    <div class="card">
+        <h3>Lab04: CSS cơ bản</h3>
+        <a href="Lab4/Lab4/Vi_du/lab04_1.html">Lab4_1</a>
+        <a href="Lab4/Lab4/Vi_du/lab04_2.html">Lab4_2</a>
+        <a href="Lab4/Lab4/Vi_du/lab04_3.html">Lab4_3</a>
+       
+        <button>Xem chi tiết</button>
+    </div>
+    <div class="card">
+        <h3>Lab05: Các thuộc tính CSS</h3>
+        <a href="Lab5/Lab05/Vi_du/lab05_1.html">Lab5_1</a>
+        <a href="Lab5/Lab05/lab05_2.html">Lab5_2</a>
+        <a href="Lab5/Lab05/Bai_2/lab5_3.html">Lab5_3</a>
+        <button>Xem chi tiết</button>
+    </div>
+
+    <div class="card">
+        <h3>Lab06: Xây dựng layout responsive bằng CSS</h3>
+        <a href="Lab6/Lab6/lab06_1.html">Lab6_1</a>
+        <a href="Lab6/Lab6/Bai_2_Minh_hoa_layout/lab06_2.html">Lab6_2</a>
+        <a href="Lab6/Lab6/Vi_du/lab06_3.html">Lab6_3</a>
+        <button>Xem chi tiết</button>
+    </div>
+    <div class="card">
+        <h3>Lab07: Javascript</h3>
+        <a href="Lab7/Lab7/Vi_du/lab07_1.html">Lab7_1</a>
+        <a href="Lab7/Lab7/demo_bai_2/lab07_2.html">Lab7_2</a>
+        <a href=""> </a> <br>
+        <a href=""> </a> <br>
+        <button>Xem chi tiết</button>
+    </div>
+
+    <div class="card">
+        <h3>Lab08: Javascript nâng cao</h3>
+        <a href="Lab8/Lab8/Vi_du_1/lab8_1.html">Lab8_1</a>
+        <a href="Lab8/Lab8/Vi_du_1/lab08_2.html">Lab8_2</a>
+        <a href="Lab8/Lab8/Vi_du_1/lab08_3.html">Lab8_3</a>
+        <button>Xem chi tiết</button>
+    </div>
+</div>
+</body>
+</html>

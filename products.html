@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm | NezStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .filter-list { list-style: none; padding: 0; }
+        .filter-list li { margin-bottom: 10px; }
+        .filter-list label { display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px; }
+        .filter-title { font-size: 16px; margin-bottom: 15px; border-bottom: 1px solid var(--color-border); padding-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <header id="main-header" class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#"><img src="img/banner/NezStore.png" alt="logo"> </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+                    
+                    <li class="nav-item has-mega-menu">
+                        <a href="products.html" class="nav-link" style="border-bottom: 2px solid var(--color-primary)">Sản phẩm <i class="ph ph-caret-down"></i></a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content container">
+                                <div class="mega-column">
+                                    <h3 class="mega-title"><a href="products.html?gender=nam">Đồ Nam</a></h3>
+                                    <ul class="mega-list">
+                                        <li><a href="products.html?gender=nam&sub=Áo thun">Áo thun</a></li>
+                                        <li><a href="products.html?gender=nam&sub=Quần tây">Quần tây</a></li>
+                                        <li><a href="products.html?gender=nam&sub=Quần jean">Quần jean</a></li>
+                                        <li><a href="products.html?gender=nam&sub=Áo khoác">Áo khoác</a></li>
+                                        <li><a href="products.html?gender=nam&sub=Quần áo thu đông">Quần áo thu đông</a></li>
+                                        <li><a href="products.html?gender=nam&sub=Giày">Giày</a></li>
+                                        <li><a href="products.html?gender=nam&sub=Mũ">Mũ</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-column">
+                                    <h3 class="mega-title"><a href="products.html?gender=nu">Đồ Nữ</a></h3>
+                                    <ul class="mega-list">
+                                        <li><a href="products.html?gender=nu&sub=Áo thun">Áo thun</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Quần">Quần</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Váy">Váy</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Váy liền">Váy liền</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Áo khoác">Áo khoác</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Giày">Giày</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Phụ kiện">Phụ kiện</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Mũ">Mũ</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Quần áo thu đông">Quần áo thu đông</a></li>
+                                        <li><a href="products.html?gender=nu&sub=Túi Xách">Túi Xách</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Liên hệ</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="user-dropdown-wrap">
+                    <button class="action-btn user-btn" title="Tài khoản" onclick="window.location.href='profile.html'">
+                        <i class="ph ph-user"></i>
+                    </button>
+                    <div class="user-dropdown">
+                        <a href="login.html">Đăng nhập</a>
+                        <a href="register.html">Đăng ký</a>
+                        <a href="profile.html">Hồ sơ</a>
+                    </div>
+                </div>
+                <button class="action-btn cart-btn" title="Giỏ hàng" onclick="window.location.href='cart.html'">
+                    <i class="ph ph-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container section-padding">
+        <h1 class="text-center mb-40" id="page-title">Tất Cả Sản Phẩm</h1>
+        <div style="display:flex; gap: 40px; flex-wrap: wrap;">
+            <!-- Sidebar Filters -->
+            <aside style="width: 250px; flex-shrink: 0;">
+                <h3 class="filter-title">Lọc theo danh mục</h3>
+                <ul class="filter-list" id="filter-categories">
+                    <!-- Injected via JS -->
+                </ul>
+
+                <h3 class="filter-title" style="margin-top: 30px;">Lọc theo giá</h3>
+                <ul class="filter-list" id="filter-prices">
+                    <li><label><input type="radio" name="price" value="all" checked> Tất cả mức giá</label></li>
+                    <li><label><input type="radio" name="price" value="0-300000"> Dưới 300,000đ</label></li>
+                    <li><label><input type="radio" name="price" value="300000-500000"> 300,000đ - 500,000đ</label></li>
+                    <li><label><input type="radio" name="price" value="500000-1000000"> 500,000đ - 1,000,000đ</label></li>
+                    <li><label><input type="radio" name="price" value="1000000-99999999"> Trên 1,000,000đ</label></li>
+                </ul>
+            </aside>
+            <!-- Product Grid -->
+            <div style="flex-grow: 1;">
+                <div id="products-page-grid" class="product-grid" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
+                    <!-- Products injected by JS -->
+                </div>
+                <div id="no-products-msg" style="display:none; text-align:center; padding: 50px 0;">
+                    <p>Không tìm thấy sản phẩm nào phù hợp.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer" style="padding-top: 40px;">
+        <div class="footer-bottom">
+            <p>&copy; 2026 NezStore. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

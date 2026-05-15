@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | NezStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="main-header" class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#"><img src="img/banner/NezStore.png" alt="logo"> </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Sản phẩm</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Liên hệ</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link" style="border-bottom: 2px solid var(--color-primary)">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="user-dropdown-wrap">
+                    <button class="action-btn user-btn" title="Tài khoản" onclick="window.location.href='profile.html'">
+                        <i class="ph ph-user"></i>
+                    </button>
+                    <div class="user-dropdown">
+                        <a href="login.html">Đăng nhập</a>
+                        <a href="register.html">Đăng ký</a>
+                        <a href="profile.html">Hồ sơ</a>
+                    </div>
+                </div>
+                <button class="action-btn cart-btn" title="Giỏ hàng" onclick="window.location.href='cart.html'">
+                    <i class="ph ph-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="container section-padding">
+            <h1 class="text-center mb-40">Tin Tức & Thời Trang</h1>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:30px;">
+                <!-- Blog Item -->
+                <div style="border:1px solid var(--color-border); padding:20px; border-radius: 4px;">
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=600&auto=format&fit=crop" style="width:100%; height:200px; object-fit:cover; margin-bottom:15px; border-radius: 4px;">
+                    <h3 style="margin-bottom:10px; font-size: 18px; text-transform:none;">Xu hướng thời trang Thu Đông 2026</h3>
+                    <p style="color:var(--color-text-light); margin-bottom:15px; font-size: 14px;">Cùng khám phá những màu sắc và phong cách sẽ lên ngôi trong mùa thu đông năm nay. Mix and match thật phong cách...</p>
+                    <a href="#" class="btn-link">Đọc thêm</a>
+                </div>
+                <!-- Blog Item -->
+                <div style="border:1px solid var(--color-border); padding:20px; border-radius: 4px;">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=600&auto=format&fit=crop" style="width:100%; height:200px; object-fit:cover; margin-bottom:15px; border-radius: 4px;">
+                    <h3 style="margin-bottom:10px; font-size: 18px; text-transform:none;">Cách phối đồ với áo Blazer</h3>
+                    <p style="color:var(--color-text-light); margin-bottom:15px; font-size: 14px;">Áo blazer luôn là lựa chọn hàng đầu của những cô nàng thanh lịch. Hãy xem bí quyết mix & match cực đỉnh...</p>
+                    <a href="#" class="btn-link">Đọc thêm</a>
+                </div>
+                <!-- Blog Item -->
+                <div style="border:1px solid var(--color-border); padding:20px; border-radius: 4px;">
+                    <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?q=80&w=600&auto=format&fit=crop" style="width:100%; height:200px; object-fit:cover; margin-bottom:15px; border-radius: 4px;">
+                    <h3 style="margin-bottom:10px; font-size: 18px; text-transform:none;">Bảo quản quần Jean đúng cách</h3>
+                    <p style="color:var(--color-text-light); margin-bottom:15px; font-size: 14px;">Đừng giặt quần jean quá thường xuyên nếu bạn muốn giữ màu và form dáng chuẩn. Các tip bảo quản quần Jean từ chuyên gia...</p>
+                    <a href="#" class="btn-link">Đọc thêm</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" style="padding-top: 40px;">
+        <div class="footer-bottom">
+            <p>&copy; 2026 NezStore. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

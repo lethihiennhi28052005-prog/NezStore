@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký | NezStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="main-header" class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#"><img src="img/banner/NezStore.png" alt="logo"> </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Sản phẩm</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Liên hệ</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="action-btn cart-btn" title="Giỏ hàng" onclick="window.location.href='cart.html'">
+                    <i class="ph ph-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="container section-padding" style="max-width: 500px; margin: 0 auto; min-height: 60vh;">
+            <h1 class="text-center mb-40">Đăng Ký</h1>
+            <form style="display:flex; flex-direction:column; gap:20px;">
+                <input type="text" placeholder="Họ và tên" style="padding:15px; border:1px solid var(--color-border); width:100%; font-family: var(--font-body);" required>
+                <input type="email" placeholder="Email" style="padding:15px; border:1px solid var(--color-border); width:100%; font-family: var(--font-body);" required>
+                <input type="password" placeholder="Mật khẩu" style="padding:15px; border:1px solid var(--color-border); width:100%; font-family: var(--font-body);" required>
+                <input type="password" placeholder="Xác nhận mật khẩu" style="padding:15px; border:1px solid var(--color-border); width:100%; font-family: var(--font-body);" required>
+                <button type="submit" class="btn btn-primary" style="width:100%; padding:15px; font-size:16px;">ĐĂNG KÝ</button>
+                <div style="text-align:center; margin-top:10px;">
+                    <a href="login.html" class="btn-link">Đã có tài khoản? Đăng nhập</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer" style="padding-top: 20px;">
+        <div class="footer-bottom">
+            <p>&copy; 2026 NezStore. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

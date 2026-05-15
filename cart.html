@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng | NezStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+            Miễn phí vận chuyển cho đơn hàng từ 500K - Đăng ký thành viên nhận ngay voucher 100K!
+        </marquee>
+    </div>
+
+    <!-- Main Header -->
+    <header id="main-header" class="header">
+        <div class="container header-container">
+            <div class="logo">
+               <a href="#"><img src="img/banner/NezStore.png" alt="logo"> </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+                    <li class="nav-item has-mega-menu">
+                        <a href="index.html" class="nav-link">Sản phẩm <i class="ph ph-caret-down"></i></a>
+                    </li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Liên hệ</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link sale-link">Sale</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="action-btn search-btn" title="Tìm kiếm">
+                    <i class="ph ph-magnifying-glass"></i>
+                </button>
+                <div class="user-dropdown-wrap">
+                    <button class="action-btn user-btn" title="Tài khoản" onclick="window.location.href='profile.html'">
+                        <i class="ph ph-user"></i>
+                    </button>
+                    <div class="user-dropdown">
+                        <a href="login.html">Đăng nhập</a>
+                        <a href="register.html">Đăng ký</a>
+                        <a href="profile.html">Hồ sơ</a>
+                    </div>
+                </div>
+                <button class="action-btn cart-btn" title="Giỏ hàng" onclick="window.location.href='cart.html'">
+                    <i class="ph ph-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="container section-padding">
+            <h1 class="text-center mb-40">Giỏ Hàng Của Bạn</h1>
+            <div id="cart-page-container">
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">NezStore</div>
+                <p>Khám phá phong cách của riêng bạn với những thiết kế độc đáo và hiện đại nhất từ chúng tôi.</p>
+                <div class="social-links">
+                    <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                    <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="#"><i class="ph ph-tiktok-logo"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Về Chúng Tôi</h3>
+                <ul>
+                    <li><a href="#">Câu chuyện thương hiệu</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Hệ thống cửa hàng</a></li>
+                    <li><a href="blog.html">Blog thời trang</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Hỗ Trợ Khách Hàng</h3>
+                <ul>
+                    <li><a href="#">Chính sách đổi trả</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Hướng dẫn chọn size</a></li>
+                    <li><a href="contact.html">Liên hệ: 1900 1234</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Đăng Ký Nhận Tin</h3>
+                <p>Nhận ngay mã giảm giá 10% cho đơn hàng đầu tiên của bạn.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Nhập email của bạn" required>
+                    <button type="submit"><i class="ph ph-paper-plane-right"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 NezStore. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
